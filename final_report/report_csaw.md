@@ -93,6 +93,12 @@
 -   A 2 byte unsigned integer is created from this value using bit manipulation
     and compared with another integer.
 
+### Mobile
+
+-   This challenge takes input deom RFID packet from indexes 0x84 to 0x91 (15 inputs)
+-   Each input is split into two(higher 4 bits and lower 4 bits) and makes it into an array
+-   Then using the string '   abcdefghijklmnopqrstu' it writes the word 'challenge' by indexing using the above array and a control variable
+
 
 <a id="org0a3b6ff"></a>
 
